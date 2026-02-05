@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Valentine’s Day ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .heart {
+      font-size: 4rem;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      background: #ff4b5c;
+      color: white;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff1e38;
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      display: none;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Happy Valentine’s Day 💖</h1>
+    <h2>To the most amazing person in my life</h2>
+
+    <div class="card">
+      <div class="heart">❤️</div>
+      <p>
+        Every day with you is my favorite day.  
+        So today, I just want to remind you how much I love you.
+      </p>
+
+      <button onclick="showMessage()">Click for a surprise 💌</button>
+
+      <div id="message">
+        <p>
+          You make my world brighter, my heart warmer,  
+          and my life better just by being in it.
+        </p>
+        <p>
+          I love you — today and always 💕
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      Made with ❤️ just for you
+    </footer>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
